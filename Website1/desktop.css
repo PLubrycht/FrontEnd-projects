@@ -1,0 +1,13 @@
+@media (min-width: 1024px) {
+  .content {
+    width: 960px;
+  }
+}
+.navbar-content {
+  justify-content: space-between;
+}
+.navbar .nav-links a {
+  color: #f1f1f1;
+  text-decoration: none;
+  margin-right: 80px;
+}

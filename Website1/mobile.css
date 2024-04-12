@@ -1,6 +1,49 @@
-body {
-  font-family: "Roboto" sans-serif;
+* {
+  margin: 0;
 }
-.desktop-only {
-  display: none;
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+}
+.content {
+  margin: 0 auto;
+  width: 96%;
+}
+.navbar {
+  color: #ffffff;
+  background-color: #4e4e4e;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+.navbar-content {
+  display: flex;
+  align-items: center;
+}
+.hero {
+  background-image: url(images/d869216e199c4faf8b78918e652e7719.jpeg);
+  height: 100vh;
+  color: #ffffff;
+}
+.shadow {
+  background-color: #00000026;
+  height: 100%;
+}
+.hero-button {
+  width: 164px;
+  height: 41.39px;
+  box-sizing: border-box;
+  font-size: 18px;
+  background-color: #00000026;
+  border: 3px solid #ffffff;
+}
+.hero-button a {
+  text-decoration: none;
+  color: #ffffff;
+}
+@media (max-width: 960px) {
+  .desktop-only {
+    display: none;
+  }
 }
