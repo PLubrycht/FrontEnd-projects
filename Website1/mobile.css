@@ -23,6 +23,7 @@ body {
 }
 .hero {
   background-image: url(images/d869216e199c4faf8b78918e652e7719.jpeg);
+  background-position: center;
   height: 100vh;
   color: #ffffff;
 }
@@ -30,9 +31,19 @@ body {
   background-color: #00000026;
   height: 100%;
 }
+.hero-content {
+  width: 359px;
+  padding: 100px 50px 50px 5px;
+}
+.hero-header {
+  font-size: 36px;
+}
+.motto {
+  font-family: 18px;
+}
 .hero-button {
   width: 164px;
-  height: 41.39px;
+  height: 41px;
   box-sizing: border-box;
   font-size: 18px;
   background-color: #00000026;
