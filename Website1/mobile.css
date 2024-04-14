@@ -33,7 +33,11 @@ body {
 }
 .hero-content {
   width: 359px;
-  padding: 100px 50px 50px 5px;
+  height: 260px;
+  padding: 100px 10px 50px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .hero-header {
   font-size: 36px;
@@ -52,6 +56,24 @@ body {
 .hero-button a {
   text-decoration: none;
   color: #ffffff;
+}
+.employees {
+  background-color: #f1f1f1;
+}
+.employees-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.employees-header {
+  font-size: 36px;
+  text-align: center;
+  width: 386px;
+  margin-top: 35px;
+  margin-bottom: 45px;
+}
+.employee-details {
+  text-align: justify;
 }
 @media (max-width: 960px) {
   .desktop-only {
