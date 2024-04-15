@@ -32,15 +32,16 @@ body {
   height: 100%;
 }
 .hero-content {
-  width: 359px;
   height: 260px;
+  width: 350px;
   padding: 100px 10px 50px 5px;
+  margin-left: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .hero-header {
-  font-size: 36px;
+  font-size: 28px;
 }
 .motto {
   font-family: 18px;
@@ -67,6 +68,7 @@ body {
 }
 .employees-header {
   font-size: 36px;
+  color: #152d41;
   text-align: center;
   width: 386px;
   margin-top: 35px;
@@ -74,6 +76,84 @@ body {
 }
 .employee-details {
   text-align: justify;
+}
+.employee-pic {
+  width: 197px;
+  height: 197px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.employee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 45px;
+}
+.employee-name {
+  margin: 25px 0 20px 0;
+}
+.offer {
+  background-color: #405d78;
+}
+.offer-content {
+  display: flex;
+  flex-direction: column;
+}
+.offer-header {
+  font-size: 26px;
+  color: white;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 45px;
+}
+.offer-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 45px;
+}
+.offer-square {
+  width: 339px;
+  height: 332px;
+  background-color: #f1f1f1;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.offer-circle {
+  width: 37.65px;
+  height: 37.65px;
+  border-radius: 50%;
+  background-color: #e07a64;
+  position: absolute;
+  transform: translateX(-169.5px) translateY(-166px);
+}
+.offer-name {
+  font-size: 24px;
+}
+.offer-description {
+  font-size: 18px;
+}
+.footer {
+  width: 100vw;
+  background-color: #4e4e4e;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 147px;
+  justify-content: center;
+  align-items: center;
+}
+.footer-text {
+  font-size: 18px;
+}
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 @media (max-width: 960px) {
   .desktop-only {
