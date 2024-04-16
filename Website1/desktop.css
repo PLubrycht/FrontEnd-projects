@@ -1,7 +1,17 @@
 @media (min-width: 1024px) {
+  .navbar,
+  .hero-content,
+  .employees,
+  .offer,
+  .footer {
+    padding-left: 50px;
+  }
   .content {
     width: 960px;
-    margin: 0 70px 0 20px;
+    margin: 0 70px 0 100px;
+  }
+  .navbar {
+    margin: 0;
   }
   .hero-content {
     width: 577px;
@@ -28,8 +38,6 @@
   .offer-content {
     align-items: center;
   }
-  .offer-circle {
-  }
   .offer-cards {
     flex-direction: row;
     flex-wrap: wrap;
@@ -38,6 +46,11 @@
   .offer-square {
     width: 198px;
     height: 194px;
+  }
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 71px;
   }
 }
 .navbar-content {
