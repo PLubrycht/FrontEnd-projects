@@ -1,6 +1,43 @@
 @media (min-width: 1024px) {
   .content {
     width: 960px;
+    margin: 0 70px 0 20px;
+  }
+  .hero-content {
+    width: 577px;
+  }
+  .employees-content {
+    align-items: flex-start;
+  }
+  .employee {
+    flex-direction: row;
+    gap: 30px;
+  }
+  .employees-header {
+    text-align: start;
+  }
+  .employee:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+  .employee-info {
+    width: 750px;
+  }
+  .offer-header {
+    text-align: start;
+  }
+  .offer-content {
+    align-items: center;
+  }
+  .offer-circle {
+  }
+  .offer-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 720px;
+  }
+  .offer-square {
+    width: 198px;
+    height: 194px;
   }
 }
 .navbar-content {
