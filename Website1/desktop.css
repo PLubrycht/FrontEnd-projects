@@ -11,74 +11,78 @@
     margin: 0;
   }
 
-.hero-content {
-  width: 50%;
-}
-.hero-header {
-  margin-top: 100px;
-}
-.employees {
-  display: flex;
-  justify-content: center;
-}
-.employees-content {
-  align-items: flex-start;
-}
-.employee {
-  flex-direction: row;
-  gap: 30px;
-}
-.employees-header {
-  text-align: start;
-}
-.employee:nth-of-type(even) {
-  flex-direction: row-reverse;
-}
-.employee-info {
-  width: 750px;
-}
-.offer {
-  display: flex;
-  justify-content: center;
-}
-.offer-header {
-  text-align: left;
-  width: 100%;
-}
-.offer-content {
-  align-items: center;
-}
-.offer-cards {
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 720px;
-}
-.offer-square {
-  width: 198px;
-  height: 194px;
-}
-.footer {
-  display: flex;
-  justify-content: center;
-}
-.footer-content {
-  flex-direction: row;
-  justify-content: space-between;
-  height: 71px;
-}
-.desktop-only {
-  display: block;
-}
+  .hero-content {
+    width: 50%;
+  }
+  .hero-header {
+    margin-top: 100px;
+  }
+  .employees {
+    display: flex;
+    justify-content: center;
+  }
+  .employees-content {
+    align-items: flex-start;
+  }
+  .employee {
+    flex-direction: row;
+    gap: 30px;
+  }
+  .employees-header {
+    text-align: start;
+  }
+  .employee:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+  .employee-info {
+    width: 750px;
+  }
+  .offer {
+    display: flex;
+    justify-content: center;
+  }
+  .offer-header {
+    text-align: left;
+    width: 100%;
+  }
+  .offer-content {
+    align-items: center;
+  }
+  .offer-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 720px;
+  }
+  .offer-square {
+    width: 198px;
+    height: 194px;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 71px;
+  }
+  .desktop-only {
+    display: block;
+  }
 
-.navbar {
-  padding-left: 50px;
-  justify-content: space-between;
-}
-.nav-links {
-  float: right;
-}
-.navbar .nav-links a {
-  color: #f1f1f1;
-  text-decoration: none;
-  margin-right: 80px;
+  .navbar {
+    padding-left: 50px;
+    justify-content: space-between;
+  }
+  .nav-links {
+    float: right;
+  }
+  .navbar .nav-links a {
+    color: #f1f1f1;
+    text-decoration: none;
+    margin-right: 80px;
+  }
+  .disabled-link {
+    cursor: not-allowed;
+  }
 }
