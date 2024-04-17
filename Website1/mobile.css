@@ -1,13 +1,15 @@
 * {
   margin: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Roboto", sans-serif;
-  height: 100vh;
 }
 .content {
   margin: 0 auto;
-  width: 96%;
+  width: 90%;
 }
 .navbar {
   color: #ffffff;
@@ -17,10 +19,7 @@ body {
   display: flex;
   align-items: center;
 }
-.navbar-content {
-  display: flex;
-  align-items: center;
-}
+
 .hero {
   background-image: url(images/d869216e199c4faf8b78918e652e7719.jpeg);
   background-position: center;
@@ -32,11 +31,8 @@ body {
   height: 100%;
 }
 .hero-content {
-  height: 260px;
-  width: 350px;
   padding: 100px 10px 50px 5px;
   box-sizing: content-box;
-  margin-left: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -45,7 +41,8 @@ body {
   font-size: 36px;
 }
 .motto {
-  font-family: 18px;
+  font-size: 24px;
+  margin: 40px 0;
 }
 .hero-button {
   width: 164px;
@@ -71,12 +68,8 @@ body {
   font-size: 36px;
   color: #152d41;
   text-align: center;
-  width: 386px;
   margin-top: 35px;
   margin-bottom: 45px;
-}
-.employee-details {
-  text-align: justify;
 }
 .employee-pic {
   width: 197px;
@@ -116,8 +109,8 @@ body {
   margin-bottom: 45px;
 }
 .offer-square {
-  width: 339px;
-  height: 332px;
+  width: 300px;
+  aspect-ratio: 1;
   background-color: #f1f1f1;
   display: flex;
   position: relative;
@@ -126,12 +119,13 @@ body {
   justify-content: center;
 }
 .offer-circle {
-  width: 37.65px;
-  height: 37.65px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background-color: #e07a64;
   position: absolute;
-  transform: translateX(-169.5px) translateY(-166px);
+  top: -15px;
+  left: -15px;
 }
 .offer-name {
   font-size: 24px;
@@ -158,9 +152,8 @@ body {
   display: flex;
   justify-content: center;
   gap: 20px;
+  font-size: 50px;
 }
-@media (max-width: 1024px) {
-  .desktop-only {
-    display: none;
-  }
+.desktop-only {
+  display: none;
 }
