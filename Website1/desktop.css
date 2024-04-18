@@ -10,12 +10,33 @@
     width: 960px;
     margin: 0;
   }
-
+  .navbar {
+    padding-left: 50px;
+    justify-content: space-between;
+  }
+  .nav-links {
+    float: right;
+  }
+  .navbar .nav-links a {
+    color: #f1f1f1;
+    text-decoration: none;
+    margin-right: 80px;
+  }
+  .disabled-link {
+    cursor: not-allowed;
+  }
   .hero-content {
     width: 50%;
   }
   .hero-header {
     margin-top: 100px;
+  }
+  .hero-button:hover {
+    background-color: white;
+    color: black;
+  }
+  .hero-button a:hover {
+    color: black;
   }
   .employees {
     display: flex;
@@ -57,6 +78,9 @@
     width: 198px;
     height: 194px;
   }
+  .offer-square:hover {
+    scale: 1.05;
+  }
   .footer {
     display: flex;
     justify-content: center;
@@ -68,21 +92,5 @@
   }
   .desktop-only {
     display: block;
-  }
-
-  .navbar {
-    padding-left: 50px;
-    justify-content: space-between;
-  }
-  .nav-links {
-    float: right;
-  }
-  .navbar .nav-links a {
-    color: #f1f1f1;
-    text-decoration: none;
-    margin-right: 80px;
-  }
-  .disabled-link {
-    cursor: not-allowed;
   }
 }
