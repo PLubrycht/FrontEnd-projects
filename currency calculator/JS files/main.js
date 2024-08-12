@@ -5,9 +5,14 @@ let currencyRate = {};
 let calculatedValue = document.querySelector("#calculatedValue");
 
 const fetchingData = () => {
+  btn.disabled = true;
   fetch("http://api.nbp.pl/api/exchangerates/tables/a")
     .then((response) => response.json())
     .then((data) => {
+      if (!data[0].rates) {
+        alert(`Failed getting currency rates`);
+        return;
+      }
       const neededCurrencies = [
         data[0].rates[1],
         data[0].rates[7],
@@ -19,12 +24,17 @@ const fetchingData = () => {
         option.value = neededCurrency.mid;
         listOfCurrencies.appendChild(option);
         const calculation = () => {
-          calculatedValue.textContent =
-            input.value * listOfCurrencies.value + " PLN";
+          calculatedValue.textContent = calculatedValue.value;
+          calculatedValue.value =
+            Number(input.value * listOfCurrencies.value).toFixed(2) + " PLN";
         };
+
         btn.addEventListener("click", calculation);
       });
-      console.log(neededCurrencies);
+    })
+    .catch((e) => alert(`Error, cannot comunicate with server`))
+    .finally(() => {
+      btn.disabled = false;
     });
 };
 fetchingData();
